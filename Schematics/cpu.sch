@@ -1833,6 +1833,45 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pad name="P$3" x="5.08" y="0" drill="0.8" shape="square"/>
 <pad name="P$4" x="0" y="3.81" drill="0.8" shape="square"/>
 </package>
+<package name="DIL28-6">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
+<wire x1="-17.653" y1="-1.27" x2="-17.653" y2="-6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="1.27" x2="-17.653" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<wire x1="17.653" y1="-6.604" x2="17.653" y2="6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="6.604" x2="-17.653" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="6.604" x2="17.653" y2="6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="-6.604" x2="17.653" y2="-6.604" width="0.1524" layer="21"/>
+<pad name="1" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-17.78" y="-6.35" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-14.605" y="-0.9398" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="OSCILLATOR">
@@ -1855,6 +1894,40 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <circle x="10.16" y="5.08" radius="0.508" width="0.254" layer="94"/>
 <circle x="10.16" y="10.16" radius="0.508" width="0.254" layer="94"/>
 <pin name="P$4" x="-10.16" y="0" length="middle"/>
+</symbol>
+<symbol name="HM62256B">
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
+<pin name="A0" x="-15.24" y="20.32" length="middle"/>
+<pin name="A1" x="-15.24" y="17.78" length="middle"/>
+<pin name="A2" x="-15.24" y="15.24" length="middle"/>
+<pin name="A3" x="-15.24" y="12.7" length="middle"/>
+<pin name="A4" x="-15.24" y="10.16" length="middle"/>
+<pin name="A5" x="-15.24" y="7.62" length="middle"/>
+<pin name="A6" x="-15.24" y="5.08" length="middle"/>
+<pin name="A7" x="-15.24" y="2.54" length="middle"/>
+<pin name="A8" x="-15.24" y="0" length="middle"/>
+<pin name="A9" x="-15.24" y="-2.54" length="middle"/>
+<pin name="A10" x="-15.24" y="-5.08" length="middle"/>
+<pin name="A11" x="-15.24" y="-7.62" length="middle"/>
+<pin name="A12" x="-15.24" y="-10.16" length="middle"/>
+<pin name="A13" x="-15.24" y="-12.7" length="middle"/>
+<pin name="A14" x="-15.24" y="-15.24" length="middle"/>
+<pin name="I/O0" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="I/O1" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="I/O2" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="I/O3" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="I/O4" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="I/O5" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="I/O6" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="I/O7" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="WE" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="VSS" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="OE" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="CS" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="-15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1887,6 +1960,177 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3"/>
 <connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HM62256B">
+<gates>
+<gate name="G$1" symbol="HM62256B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL28-6">
+<connects>
+<connect gate="G$1" pin="A0" pad="10"/>
+<connect gate="G$1" pin="A1" pad="9"/>
+<connect gate="G$1" pin="A10" pad="21"/>
+<connect gate="G$1" pin="A11" pad="23"/>
+<connect gate="G$1" pin="A12" pad="2"/>
+<connect gate="G$1" pin="A13" pad="26"/>
+<connect gate="G$1" pin="A14" pad="1"/>
+<connect gate="G$1" pin="A2" pad="8"/>
+<connect gate="G$1" pin="A3" pad="7"/>
+<connect gate="G$1" pin="A4" pad="6"/>
+<connect gate="G$1" pin="A5" pad="5"/>
+<connect gate="G$1" pin="A6" pad="4"/>
+<connect gate="G$1" pin="A7" pad="3"/>
+<connect gate="G$1" pin="A8" pad="25"/>
+<connect gate="G$1" pin="A9" pad="24"/>
+<connect gate="G$1" pin="CS" pad="20"/>
+<connect gate="G$1" pin="I/O0" pad="11"/>
+<connect gate="G$1" pin="I/O1" pad="12"/>
+<connect gate="G$1" pin="I/O2" pad="13"/>
+<connect gate="G$1" pin="I/O3" pad="15"/>
+<connect gate="G$1" pin="I/O4" pad="16"/>
+<connect gate="G$1" pin="I/O5" pad="17"/>
+<connect gate="G$1" pin="I/O6" pad="18"/>
+<connect gate="G$1" pin="I/O7" pad="19"/>
+<connect gate="G$1" pin="OE" pad="22"/>
+<connect gate="G$1" pin="VCC" pad="27"/>
+<connect gate="G$1" pin="VSS" pad="14"/>
+<connect gate="G$1" pin="WE" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="atmel-custom">
+<description>Atmel components.
+Jason Wright (jpwright), last updated 2/11/14</description>
+<packages>
+<package name="DIL28-6">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
+<wire x1="-17.653" y1="-1.27" x2="-17.653" y2="-6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="1.27" x2="-17.653" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<wire x1="17.653" y1="-6.604" x2="17.653" y2="6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="6.604" x2="-17.653" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="6.604" x2="17.653" y2="6.604" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="-6.604" x2="17.653" y2="-6.604" width="0.1524" layer="21"/>
+<pad name="1" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="16.51" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-17.78" y="-6.35" size="1.778" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-14.605" y="-0.9398" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="AT28C256">
+<description>IC EEPROM 256KBIT 150NS</description>
+<wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-50.8" x2="0" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="0" y1="-50.8" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="A0" x="-5.08" y="-2.54" length="middle"/>
+<pin name="A1" x="-5.08" y="-5.08" length="middle"/>
+<pin name="A2" x="-5.08" y="-7.62" length="middle"/>
+<pin name="A3" x="-5.08" y="-10.16" length="middle"/>
+<pin name="A4" x="-5.08" y="-12.7" length="middle"/>
+<pin name="A5" x="-5.08" y="-15.24" length="middle"/>
+<pin name="A6" x="-5.08" y="-17.78" length="middle"/>
+<pin name="A7" x="-5.08" y="-20.32" length="middle"/>
+<pin name="A8" x="-5.08" y="-22.86" length="middle"/>
+<pin name="A9" x="-5.08" y="-25.4" length="middle"/>
+<pin name="A10" x="-5.08" y="-27.94" length="middle"/>
+<pin name="A11" x="-5.08" y="-30.48" length="middle"/>
+<pin name="A12" x="-5.08" y="-33.02" length="middle"/>
+<pin name="A13" x="-5.08" y="-35.56" length="middle"/>
+<pin name="A14" x="-5.08" y="-38.1" length="middle"/>
+<pin name="I/O0" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="I/O1" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="I/O2" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="I/O3" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="I/O4" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="I/O5" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="I/O6" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="I/O7" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="/WE" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="/OE" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="/CE" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="VCC" x="-5.08" y="-43.18" length="middle"/>
+<pin name="GND" x="-5.08" y="-48.26" length="middle"/>
+<text x="0" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-53.34" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AT28C256-28DIP">
+<description>IC EEPROM 256KBIT 150NS 28DIP</description>
+<gates>
+<gate name="G$1" symbol="AT28C256" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL28-6">
+<connects>
+<connect gate="G$1" pin="/CE" pad="20"/>
+<connect gate="G$1" pin="/OE" pad="22"/>
+<connect gate="G$1" pin="/WE" pad="27"/>
+<connect gate="G$1" pin="A0" pad="10"/>
+<connect gate="G$1" pin="A1" pad="9"/>
+<connect gate="G$1" pin="A10" pad="21"/>
+<connect gate="G$1" pin="A11" pad="23"/>
+<connect gate="G$1" pin="A12" pad="2"/>
+<connect gate="G$1" pin="A13" pad="26"/>
+<connect gate="G$1" pin="A14" pad="1"/>
+<connect gate="G$1" pin="A2" pad="8"/>
+<connect gate="G$1" pin="A3" pad="7"/>
+<connect gate="G$1" pin="A4" pad="6"/>
+<connect gate="G$1" pin="A5" pad="5"/>
+<connect gate="G$1" pin="A6" pad="4"/>
+<connect gate="G$1" pin="A7" pad="3"/>
+<connect gate="G$1" pin="A8" pad="25"/>
+<connect gate="G$1" pin="A9" pad="24"/>
+<connect gate="G$1" pin="GND" pad="14"/>
+<connect gate="G$1" pin="I/O0" pad="11"/>
+<connect gate="G$1" pin="I/O1" pad="12"/>
+<connect gate="G$1" pin="I/O2" pad="13"/>
+<connect gate="G$1" pin="I/O3" pad="15"/>
+<connect gate="G$1" pin="I/O4" pad="16"/>
+<connect gate="G$1" pin="I/O5" pad="17"/>
+<connect gate="G$1" pin="I/O6" pad="18"/>
+<connect gate="G$1" pin="I/O7" pad="19"/>
+<connect gate="G$1" pin="VCC" pad="28"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1945,6 +2189,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="+5V6" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+5V"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="+5V7" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+5V"/>
+<part name="U$3" library="atmel-custom" deviceset="AT28C256-28DIP" device=""/>
+<part name="U$4" library="JakeBooth" deviceset="HM62256B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1965,6 +2211,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="-83.82" y="-40.64" size="1.778" layer="96">2Mhz</text>
 <text x="-104.14" y="-33.02" size="5.08" layer="97">2Mhz Main Clock</text>
 <text x="-157.48" y="38.1" size="3.81" layer="97">Clock Select</text>
+<text x="-162.56" y="12.7" size="1.778" layer="97">NOTE: Not the right package...</text>
+<wire x1="182.88" y1="139.7" x2="340.36" y2="139.7" width="0.1524" layer="97"/>
+<wire x1="340.36" y1="139.7" x2="340.36" y2="-78.74" width="0.1524" layer="97"/>
+<wire x1="340.36" y1="-78.74" x2="182.88" y2="-78.74" width="0.1524" layer="97"/>
+<text x="276.86" y="96.52" size="3.81" layer="97">EEPROM</text>
+<text x="284.48" y="0" size="3.81" layer="97">RAM</text>
+<text x="246.38" y="124.46" size="6.4516" layer="97">Memory </text>
 </plain>
 <instances>
 <instance part="IC1" gate="1" x="25.4" y="27.94"/>
@@ -2006,6 +2259,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="+5V6" gate="G$1" x="-170.18" y="35.56"/>
 <instance part="GND11" gate="1" x="0" y="81.28"/>
 <instance part="+5V7" gate="G$1" x="0" y="119.38"/>
+<instance part="U$3" gate="G$1" x="281.94" y="88.9"/>
+<instance part="U$4" gate="G$1" x="292.1" y="-25.4"/>
 </instances>
 <busses>
 </busses>
