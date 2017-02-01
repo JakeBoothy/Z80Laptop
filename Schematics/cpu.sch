@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -619,6 +619,28 @@ at 30/07/2012 14:27:46</description>
 <text x="-5.3594" y="15.1892" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-4.445" y="-24.765" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
+<symbol name="74HC32N,652">
+<pin name="VCC" x="-17.78" y="12.7" length="middle" direction="pwr"/>
+<pin name="1B" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="2B" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="3B" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="4B" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="1A" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="2A" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="3A" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="4A" x="-17.78" y="-12.7" length="middle" direction="in"/>
+<pin name="GND" x="-17.78" y="-17.78" length="middle" direction="pas"/>
+<pin name="1Y" x="17.78" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="2Y" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="3Y" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="4Y" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.4064" layer="94"/>
+<text x="-4.7752" y="20.3708" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.9878" y="-27.2288" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="74HC245N,652" prefix="U">
@@ -690,6 +712,41 @@ at 30/07/2012 14:27:46</description>
 <attribute name="MPN" value="74HC04N,652" constant="no"/>
 <attribute name="OC_FARNELL" value="1826775" constant="no"/>
 <attribute name="OC_NEWARK" value="71R1923" constant="no"/>
+<attribute name="PACKAGE" value="DIP-14" constant="no"/>
+<attribute name="SUPPLIER" value="NXP" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74HC32N,652" prefix="U">
+<description>Quad 2-input OR gate</description>
+<gates>
+<gate name="A" symbol="74HC32N,652" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIP254P762X420-14">
+<connects>
+<connect gate="A" pin="1A" pad="1"/>
+<connect gate="A" pin="1B" pad="2"/>
+<connect gate="A" pin="1Y" pad="3"/>
+<connect gate="A" pin="2A" pad="4"/>
+<connect gate="A" pin="2B" pad="5"/>
+<connect gate="A" pin="2Y" pad="6"/>
+<connect gate="A" pin="3A" pad="9"/>
+<connect gate="A" pin="3B" pad="10"/>
+<connect gate="A" pin="3Y" pad="8"/>
+<connect gate="A" pin="4A" pad="12"/>
+<connect gate="A" pin="4B" pad="13"/>
+<connect gate="A" pin="4Y" pad="11"/>
+<connect gate="A" pin="GND" pad="7"/>
+<connect gate="A" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="74HC32N,652" constant="no"/>
+<attribute name="OC_FARNELL" value="1826790" constant="no"/>
+<attribute name="OC_NEWARK" value="71R2360" constant="no"/>
 <attribute name="PACKAGE" value="DIP-14" constant="no"/>
 <attribute name="SUPPLIER" value="NXP" constant="no"/>
 </technology>
@@ -2191,6 +2248,12 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <part name="+5V7" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+5V"/>
 <part name="U$3" library="atmel-custom" deviceset="AT28C256-28DIP" device=""/>
 <part name="U$4" library="JakeBooth" deviceset="HM62256B" device=""/>
+<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U5" library="NXP_By_element14_Batch_1" deviceset="74HC32N,652" device=""/>
+<part name="+5V8" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+5V"/>
+<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2215,8 +2278,8 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="182.88" y1="139.7" x2="340.36" y2="139.7" width="0.1524" layer="97"/>
 <wire x1="340.36" y1="139.7" x2="340.36" y2="-78.74" width="0.1524" layer="97"/>
 <wire x1="340.36" y1="-78.74" x2="182.88" y2="-78.74" width="0.1524" layer="97"/>
-<text x="276.86" y="96.52" size="3.81" layer="97">EEPROM</text>
-<text x="284.48" y="0" size="3.81" layer="97">RAM</text>
+<text x="276.86" y="96.52" size="3.81" layer="97">32kb EEPROM</text>
+<text x="281.94" y="0" size="3.81" layer="97">32kb RAM</text>
 <text x="246.38" y="124.46" size="6.4516" layer="97">Memory </text>
 </plain>
 <instances>
@@ -2261,6 +2324,12 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <instance part="+5V7" gate="G$1" x="0" y="119.38"/>
 <instance part="U$3" gate="G$1" x="281.94" y="88.9"/>
 <instance part="U$4" gate="G$1" x="292.1" y="-25.4"/>
+<instance part="GND12" gate="1" x="264.16" y="33.02"/>
+<instance part="GND13" gate="1" x="269.24" y="-50.8"/>
+<instance part="GND14" gate="1" x="322.58" y="-50.8"/>
+<instance part="U5" gate="A" x="226.06" y="71.12"/>
+<instance part="+5V8" gate="G$1" x="200.66" y="91.44"/>
+<instance part="GND15" gate="1" x="200.66" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -2480,6 +2549,33 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="7.62" y1="88.9" x2="0" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="0" y1="88.9" x2="0" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="A14"/>
+<wire x1="276.86" y1="50.8" x2="264.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="50.8" x2="264.16" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="276.86" y1="40.64" x2="264.16" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="40.64" x2="264.16" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="A14"/>
+<wire x1="276.86" y1="-40.64" x2="269.24" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-40.64" x2="269.24" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="VSS"/>
+<wire x1="307.34" y1="-33.02" x2="322.58" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="-33.02" x2="322.58" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="GND"/>
+<wire x1="208.28" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="53.34" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -2764,6 +2860,12 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <wire x1="0" y1="111.76" x2="0" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="+5V7" gate="G$1" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="U5" gate="A" pin="VCC"/>
+<wire x1="208.28" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="83.82" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="+5V8" gate="G$1" pin="VCC"/>
+</segment>
 </net>
 <net name="BUSACK" class="0">
 <segment>
@@ -2952,6 +3054,39 @@ Jason Wright (jpwright), last updated 2/11/14</description>
 <pinref part="U$2" gate="G$1" pin="P$3"/>
 <wire x1="-137.16" y1="20.32" x2="-124.46" y2="20.32" width="0.1524" layer="91"/>
 <label x="-134.62" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MREQ" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="MREQ"/>
+<wire x1="7.62" y1="53.34" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
+<label x="-5.08" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RD" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="RD"/>
+<wire x1="7.62" y1="48.26" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
+<label x="-5.08" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IORQ" class="0">
+<segment>
+<pinref part="IC1" gate="1" pin="IORQ"/>
+<wire x1="7.62" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<label x="-5.08" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="1A"/>
+<wire x1="200.66" y1="66.04" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="1B"/>
+<wire x1="200.66" y1="78.74" x2="208.28" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
