@@ -4887,6 +4887,15 @@ Last 32k is currently unused</text>
 <text x="2.54" y="287.02" size="1.778" layer="97">NOTE: Only utilizing 8 ports of IO read, but 
 all 256 ports of IO write. Maybe the IO controller
 will do sound as well?</text>
+<text x="-462.28" y="93.98" size="5.08" layer="97">1: SD card
+2: RTC
+3: PS2 Keyboard
+4: ESP8266
+5: GPIO Breakout
+6: Analoge Breakout
+7: UART Breakout
+8: Custom/Timer/Something Else
+</text>
 </plain>
 <instances>
 <instance part="IC6" gate="D" x="-55.88" y="0" rot="R180"/>
